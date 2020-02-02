@@ -22,6 +22,7 @@ public class CustomerAccountRule implements AccountRule {
     /* (non-Javadoc)
      * @see com.priceminister.account.AccountRule#withdrawPermitted(java.lang.Double)
      */
+	@Override
     public boolean withdrawPermitted(Double resultingAccountBalance) {
         return resultingAccountBalance >= 0;
     }
